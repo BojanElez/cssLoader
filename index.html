@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimi'S photos</title>
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	
+</head>
+<body>
+    <div class="photo-wrapper">
+      <div class="photo">
+        <div class="click">
+        </div>
+        <div class="circle1">
+        </div> 
+        <div class="circle2">
+        </div> 
+        <div class="circle3">
+        </div> 
+        <div class="line1">
+        </div>
+        <div class="line2">
+        </div>
+      </div>
+    </div>
+    <header class="header">
+
+      <div class="video">
+        <div class="color-overlay"></div>
+          <img src="../asstec/images/background.jpg"  >
+      </div>
+      <div class="headline">
+        <h1 class="main-headline">Fotograf 
+        <div class="separator">|</div>
+        <span class="name"> Marko Markovic</span></h1>
+        <p class="headline-text">Šta god da vas je dovelo na ovu stranicu, na pravom ste mestu. Ovo je sajt o fotografiji posvećen onima koji traže inspiraciju ili im treba profesionalni fotograf za svoje projekte i kreativne ideje.</p>
+        <div class="icon-holder">
+          <i class="fa fa-facebook-f" title="facebook" ></i>
+          <i class="fa fa-twitter" title="twitter" ></i>
+          <i class="fa fa-instagram" title="instagram" ></i>
+          <i class="fa fa-youtube" title="youtube" ></i>
+        </div>
+      </div>
+    </header> 
+  </div>
+  <script>
+    $(document).ready(function() {
+
+
+      // Loader
+      if ($(window).width() > 768) {
+        $(window).on("load",function() {
+          setTimeout(function(){ 
+            $('.photo-wrapper').hide();
+          }, 3500);
+        });
+      } else {
+        $(window).on("load",function() {
+            $('.photo-wrapper').hide();
+        });
+      }
+
+    }); 
+  </script>
+</body>
+</html>
